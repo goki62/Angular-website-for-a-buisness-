@@ -14,7 +14,7 @@ export class LocationComponent implements OnInit {
 
   ngOnInit(): void {
     let loader = new Loader({
-      apiKey: 'AIzaSyChxI5OizoRQm9NqHfeNCv1qzKYVa3LGeA'
+      apiKey:
     })
 
     loader.load().then(() =>{
