@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Amatic+SC&family=Bebas+Neue&family=Bree+Serif&family=Cagliostro&family=Coiny&family=Finger+Paint&family=Fredoka&family=Indie+Flower&family=Josefin+Sans:wght@500&family=Permanent+Marker&family=Rancho&family=Satisfy&family=Teko&display=swap');
+.container{
+    display: flex;
+    overflow: hidden ;
+    justify-content: space-around;
+    height: 80vh;
+}
+.textFlex{
+    display: flex;
+    width: 40vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mapFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.full{
+    width: 40vw;
+    height: 60vh;
+    border-radius: 14px;
+}
+.message{
+    display: flex;
+    font-family: 'ABeeZee', sans-serif ;
+    color: #d9c7bd;
+    height: 30vh;
+    font-size: 2rem;
+    line-height: 2.2rem;
+    font-weight: 600;
+    width: 85%;
+    text-align: center;
+    align-items: center;
+}
+.call{
+    display: flex;
+    font-family: 'ABeeZee', sans-serif ;
+    color: rgb(212, 192, 181);
+    font-size: 28px;
+    line-height: 2.2rem;
+    font-weight: 600;
+}
+@media screen and (max-width: 1000px){
+    .message{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 600px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        height: 120vh;
+    }
+    .textFlex{
+        display: flex;
+        width: 80%;
+        margin: 5% 0 0 8%;
+    }
+.full{
+    width: 80vw;
+    height: 50vh;
+    display: flex;
+    margin: 0 0 5% 0;
+}
+.message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    font-size: 20px;
+    text-align: center;
+}
+.call{
+    display: flex;
+    width: auto;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 8%;
+}
+}

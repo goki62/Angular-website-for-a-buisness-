@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Amatic+SC&family=Bebas+Neue&family=Bree+Serif&family=Cagliostro&family=Coiny&family=Finger+Paint&family=Fredoka&family=Indie+Flower&family=Josefin+Sans:wght@500&family=Permanent+Marker&family=Rancho&family=Satisfy&family=Teko&display=swap');
+
+.container-order{
+  height: 65vh;
+  flex-flow: row;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.first-column{
+  height: 90%;
+}
+.second-column{
+  height: 90%;
+}
+.msg{
+  font-family: 'ABeeZee', sans-serif ;
+    color: rgb(212, 192, 181);
+    font-size: 32px;
+    width: 32vw;
+    line-height: 2.6rem;
+    font-weight: 600;
+    text-align: center;
+    
+}
+a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.order{
+  background-color: #677576;
+  color: #d9c7bd;
+  border-color: #a39b97;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  border-radius: 32px;
+  height: 60px;
+  width: 180px;
+  margin-top: 3%;
+  transition: 0.25s ease-in-out;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  border-width: 2px;
+  &:hover {
+    cursor: pointer;
+    background-color: #d9c7bd;
+    color: #323235;
+    border: none;
+  }
+  &:active {
+    opacity: 60%;
+  }
+  
+}
+.work-time{
+    display: flex;
+    font-family: 'ABeeZee', sans-serif ;
+    color: rgb(212, 192, 181);
+    font-size: 26px;
+    width: 32vw;
+    line-height: 2.4rem;
+    font-weight: 600;
+    margin-top: 3%;
+    text-align: center;
+    justify-content: center;
+  }
+  @media screen and (max-width: 1030px){
+    .msg{
+      width: 42vw;
+      font-size: min(2rem,3vw);
+      line-height: 2.4rem;
+    }
+    .work-time{
+      width: 42vw;
+      font-size: min(2rem,3vw);
+      line-height: 2.4rem;
+    }
+  }
+  @media screen and (max-width: 520px){
+    .container-order{
+      flex-flow: column;
+      height: 100vh;
+    }
+    .first-column{
+      margin: 5% 0 0 0;
+    }
+    .msg{
+      width: 60vw;
+      line-height: 1.8rem;
+      font-size: min(3rem,5vw);
+    }
+    .work-time{
+      width: 60vw;
+      line-height: 1.8rem;
+      font-size: min(3rem,5vw);
+      margin: 6% 0 0 0;
+    }
+    .order{
+      height: 40px;
+      width: 160px;
+      font-size: 18px;
+    }
+  }

@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Cagliostro&family=Coiny&family=Finger+Paint&family=Fredoka&family=Rancho&display=swap");
+.body {
+  height: 12vh;
+  background-color: #1c1c1e;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  justify-content: space-between;
+  align-content: center;
+  min-height: 95px;
+}
+.img-link{
+  display: flex;
+  align-items: center;
+  flex: start;
+  margin: 0 0 0 10%;
+}
+img {
+  max-height: 90px;
+  border-radius: 16px;
+  display: flex;
+}
+.navigation-buttons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 10% 0 0;
+}
+
+.menu {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  background-color: #1c1c1e;
+  color: #b86258;
+  border: none;
+  height: 50px;
+  border-radius: 12px;
+  transition: background-color 0.25s, color 0.25s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #525266;
+  }
+  &:active {
+    opacity: 50%;
+  }
+}
+.take-away {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  background-color: #1c1c1e;
+  color: #b86258;
+  border: none;
+  height: 50px;
+  border-radius: 12px;
+  transition: background-color 0.25s, color 0.25s;
+  &:hover {
+    cursor: pointer;
+    background-color: #525266;
+  }
+  &:active {
+    opacity: 50%;
+  }
+}
+.location {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  background-color: #1c1c1e;
+  color: #b86258;
+  border: none;
+  height: 50px;
+  border-radius: 12px;
+  transition: background-color 0.25s, color 0.25s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #525266;
+  }
+  &:active {
+    opacity: 50%;
+  }
+}
+.contact {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  background-color: #1c1c1e;
+  color: #b86258;
+  border: none;
+  height: 50px;
+  margin-top: 25%;
+  border-radius: 12px;
+  transition: background-color 0.25s, color 0.25s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #525266;
+  }
+  &:active {
+    opacity: 50%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .body {
+    height: 10vh;
+    position: sticky;
+    z-index: 4;
+    top: 0;
+    overflow: hidden;
+  }
+
+  .navigation-buttons {
+    display: flex;
+    gap: 1rem;
+    margin: 0 2% 0 3%;
+  }
+  .menu {
+    font-size: 16px;
+  }
+  .take-away {
+    font-size: 16px;
+  }
+  .location {
+    font-size: 16px;
+  }
+  .img-link,
+  img {
+    max-height: 7vh;
+    margin: 2%;
+  }
+}

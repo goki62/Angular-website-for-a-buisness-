@@ -1,0 +1,80 @@
+.container {
+  background-color: #1c1c1e;
+  height: 260px;
+}
+.contacts {
+  font-family: "Finger Paint", cursive;
+  padding-top: 40px;
+  font-size: 28px;
+  color: aliceblue;
+}
+h1 {
+  text-align: center;
+}
+.social-menu ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+}
+.social-menu ul li {
+  list-style: none;
+  margin: 0 30px;
+}
+.social-menu ul li .fa {
+  color: #000000;
+  font-size: 35px;
+  line-height: 70px;
+  transition: 0.5s;
+}
+.social-menu ul li .fa:hover {
+  color: #ffffff;
+}
+.social-menu ul li a {
+  position: relative;
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+  transition: 0.5s;
+  transform: translate(0, 0px);
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+.social-menu ul li a:hover {
+  transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+.social-menu ul li:nth-child(1) a:hover {
+  background-color: #3b5999;
+}
+.social-menu ul li:nth-child(2) a:hover {
+  background-color: #e4405f;
+}
+.social-menu ul li:nth-child(3) a:hover {
+  background-color: #e4405f;
+}
+.social-menu ul li:nth-child(4) a:hover {
+  background-color: #cd201f;
+}
+.social-menu ul li:nth-child(5) a:hover {
+  background-color: #0077b5;
+}
+@media screen and (max-width: 500px) {
+  .social-menu ul li a {
+    width: 45px;
+    height: 45px;
+  }
+  .contacts {
+    font-size: 20px;
+  }
+  .social-menu ul li .fa {
+    font-size: 25px;
+    line-height: 50px;
+  }
+  .container {
+    background-color: #1c1c1e;
+    height: 180px;
+    width: auto;
+    max-width: 500px;
+  }
+}

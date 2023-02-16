@@ -1,0 +1,586 @@
+<div class="container-main">
+<div id="progress">
+<span id="progress-value" (click)="scrollUp()">&#x2191;</span>
+</div><div class="cards-box">
+    <div id="card-option-container">
+        <mat-card class="card-option">
+            <mat-card-actions>
+                <div class="card-buttons">
+                    <button (click)="salad()">Salads</button>
+                    <button (click)="stews()">Stews</button>
+                    <button (click)="appetizers()">Appetizers</button>
+                    <button (click)="barbeque()">Barbeque</button>
+                    <button (click)="drinks()">Alc. Drinks</button>
+                    <button (click)="beer()">Beer</button>
+                    <button (click)="warmdrinks()">Warm drinks</button>
+                    <button (click)="wine()">Wine</button>
+                </div>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+
+   <div class="mobile-buttons">
+    <button (click)="saladM()">Salads</button>
+    <button (click)="stewsM()">Stews</button>
+    <button (click)="appetizersM()">Appetizer</button>
+    <button (click)="barbequeM()">Barbeque</button>
+    <button (click)="drinksM()">Alc. Drinks</button>
+    <button (click)="beerM()">Beer</button>
+    <button (click)="warmdrinksM()">Warm drinks</button>
+    <button (click)="wineM()">Wine</button>
+   </div>
+
+<div class="line-1" style="margin-top: 10%;"> <span>salads</span> </div>
+    <div class="salads" id="salad-id">
+        <mat-card class="food-card" data-tooltip="Tomatoes, cucumbers, onion, feta cheese, olives, and olive oil.">
+            <mat-card-header>
+                <mat-card-title class="food-name">Greek Salad</mat-card-title>
+                <p class="price">130/200</p>
+            </mat-card-header>
+        </mat-card>
+        <mat-card class="food-card" data-tooltip=" Tomatoes, cucumbers, onions, peppers, white cheese">
+            <mat-card-header>
+                <mat-card-title class="food-name">Shopska salad</mat-card-title>
+                <p class="price">130/200</p>
+            </mat-card-header>
+        </mat-card>
+        <mat-card class="food-card" data-tooltip="carrots, cucumbers, cabbage, beetroot, tomatoes">
+            <mat-card-header>
+                <mat-card-title class="food-name">Mixed Salad</mat-card-title>
+                <p class="price">230</p>
+            </mat-card-header>
+        </mat-card>
+        <mat-card class="food-card" data-tooltip="cucumbers, sour cream, wallnuts">
+            <mat-card-header>
+                <mat-card-title class="food-name">Tarator Salad</mat-card-title>
+                <p class="price">120</p>
+            </mat-card-header>
+        </mat-card>
+        <mat-card class="food-card" data-tooltip="medium bell peper with sour cream">
+            <mat-card-header>
+                <mat-card-title class="food-name">Bell Pepper with Cream</mat-card-title>
+                <p class="price">130</p>
+            </mat-card-header>
+        </mat-card>
+        <mat-card class="food-card" data-tooltip="tomato, cucumber, carrot, cabbage, zuchini,2 filled peppers, 2 pieces of sheep cheese, 2 wrapped white cheese with bacon">
+            <mat-card-header>
+                <mat-card-title class="food-name">Mixed Salad 'KA'</mat-card-title>
+                <p class="price">900</p>
+            </mat-card-header>
+        </mat-card>
+
+    </div>
+    <div class="line-1"> <span>Season Salads</span> </div>
+    <div class="Season-salad" id="season-salad-id">
+        <mat-card class="food-card" data-tooltip="boiled cow or sheep parts">
+            <mat-card-header>
+                <mat-card-title class="food-name">Khash</mat-card-title>
+                <p class="price">150</p>
+            </mat-card-header>
+        </mat-card>
+        <mat-card class="food-card" data-tooltip="Winter salad">
+            <mat-card-header>
+                <mat-card-title class="food-name">Seasonal Salad</mat-card-title>
+                <p class="price">110/160</p>
+            </mat-card-header>
+            
+        </mat-card>
+        <mat-card class="food-card" data-tooltip="National food made of peppers, carrots, garlic, and tomatoes.">
+            <mat-card-header>
+                <mat-card-title class="food-name">Ljutenica</mat-card-title>
+                <p class="price">160</p>
+            </mat-card-header>
+            
+        </mat-card>
+    </div>
+    <div class="line-1"> <span>Stews</span> </div>
+    <div class="stews" id="stew-id">
+        <mat-card class="food-card" data-tooltip="Tender chunks of chicken and savory veggies">
+            <mat-card-header>
+                <mat-card-title class="food-name">Chicken Stew</mat-card-title>
+                <p class="price">140</p>
+            </mat-card-header>
+            
+        </mat-card>
+        <mat-card class="food-card" data-tooltip="Beef, onion, carrots, potatoes">
+            <mat-card-header>
+                <mat-card-title class="food-name">Beef Stew</mat-card-title>
+                <p class="price">150</p>
+            </mat-card-header>
+            
+        </mat-card>
+    </div>
+    <div class="line-1"> <span>appetizers</span> </div>
+    <div class="appetizers" id="appetizers-id">
+        <mat-card class="food-card" data-tooltip=" Deep fried soft cheese">
+            <mat-card-header>
+                <mat-card-title class="food-name">Soft Cheese</mat-card-title>
+                <p class="price">50</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="Deep fried zucchini">
+            <mat-card-header>
+                <mat-card-title class="food-name">Fried Zucchini</mat-card-title>
+                <p class="price">180</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="Deep fried bell pepper with white cheese">
+            <mat-card-header>
+                <mat-card-title class="food-name">Fried Pepper W/ Cheese</mat-card-title>
+                <p class="price">140</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="1 sweet pepper">
+            <mat-card-header>
+                <mat-card-title class="food-name">Sweet Pepper</mat-card-title>
+                <p class="price">25</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="Deep fried chicken fingers">
+            <mat-card-header>
+                <mat-card-title class="food-name">Chicken Fingers</mat-card-title>
+                <p class="price">230</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip=" Fried chips with vegetable oil">
+            <mat-card-header>
+                <mat-card-title class="food-name">Finger Chips</mat-card-title>
+                <p class="price">100/160</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="Fried chips with vegetable oil covered with white cheese">
+            <mat-card-header>
+                <mat-card-title class="food-name">Finger Chips W/ Cheese</mat-card-title>
+                <p class="price">130/190</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="Fried thick sliced potatoe wedges">
+            <mat-card-header>
+                <mat-card-title class="food-name">Potato Wedges</mat-card-title>
+                <p class="price">110/170</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="Fried thick sliced potatoe wedges with white cheese">
+            <mat-card-header>
+                <mat-card-title class="food-name">Potato Wedges W/ Cheese</mat-card-title>
+                <p class="price">140/200</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="Authentic fresh home made pitta bread">
+            <mat-card-header>
+                <mat-card-title class="food-name">Pitta Bread</mat-card-title>
+                <p class="price">30</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="pitta bread grilled on the barbeque covered with cheese">
+            <mat-card-header>
+                <mat-card-title class="food-name">Grilled Bread</mat-card-title>
+                <p class="price">90/150</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="sliced tomato">
+            <mat-card-header>
+                <mat-card-title class="food-name">Tomatoes</mat-card-title>
+                <p class="price">40</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="plate of olives">
+            <mat-card-header>
+                <mat-card-title class="food-name">Olives</mat-card-title>
+                <p class="price">70</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="organically sourced white sheep cheese">
+            <mat-card-header>
+                <mat-card-title class="food-name">Sheep cheese </mat-card-title>
+                <p class="price">160</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="organically sourced hard cheese">
+            <mat-card-header>
+                <mat-card-title class="food-name">Hard Cheese</mat-card-title>
+                <p class="price">170</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="Fried champignons">
+            <mat-card-header>
+                <mat-card-title class="food-name">Mushrooms</mat-card-title>
+                <p class="price">200</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="National piroshki bread ham and white cheese">
+            <mat-card-header>
+                <mat-card-title class="food-name">Piroshki Bread</mat-card-title>
+                <p class="price">180</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="Deep fried cheese">
+            <mat-card-header>
+                <mat-card-title class="food-name">Fried Cheese</mat-card-title>
+                <p class="price">150</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="Melted white cheese in the oven">
+            <mat-card-header>
+                <mat-card-title class="food-name">Melted White Cheese</mat-card-title>
+                <p class="price">250</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="Soft cheese, piroshki, zuchini, cheese, chicken fingers">
+            <mat-card-header>
+                <mat-card-title class="food-name">Mixed Fried Dish</mat-card-title>
+                <p class="price">1200</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="Mixed fried dish with addition hard cheese, sheep cheese, bell pepper">
+            <mat-card-header>
+                <mat-card-title class="food-name">Mixed Fried Dish 'KA'</mat-card-title>
+                <p class="price">1600</p>
+            </mat-card-header>
+            
+        </mat-card>
+    </div>
+    <div class="line-1"> <span>Barbeque</span> </div>
+    <div class="bbq" id="bbq-id">
+        <mat-card class="food-card" data-tooltip="1kg of fresh Kebabs">
+            <mat-card-header>
+                <mat-card-title class="food-name">Kebabs</mat-card-title>
+                <p class="price">600</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="Meat patty with lean beef">
+            <mat-card-header>
+                <mat-card-title class="food-name">Meat Patty</mat-card-title>
+                <p class="price">600</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="Beef patty stuffed with cheese">
+            <mat-card-header>
+                <mat-card-title class="food-name">Patty W/ Cheese</mat-card-title>
+                <p class="price">600</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="Pork meat wrapped with bacon">
+            <mat-card-header>
+                <mat-card-title class="food-name">Bacon Wrapped Meat</mat-card-title>
+                <p class="price">700</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="Chicken breast wrapped with bacon">
+            <mat-card-header>
+                <mat-card-title class="food-name">Bacon Wrapped Chicken</mat-card-title>
+                <p class="price">700</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip=" Home made sausage with lean meat">
+            <mat-card-header>
+                <mat-card-title class="food-name">Sausage</mat-card-title>
+                <p class="price">700</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="Smoked pig ribs">
+            <mat-card-header>
+                <mat-card-title class="food-name">Smoked Ribs</mat-card-title>
+                <p class="price">700</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="Grilled pork ribs ">
+            <mat-card-header>
+                <mat-card-title class="food-name">Ribs</mat-card-title>
+                <p class="price">700</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="Pork chop on charcoal barbeque">
+            <mat-card-header>
+                <mat-card-title class="food-name">Pork Chop</mat-card-title>
+                <p class="price">700</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="Beef shin on charcoal barbeque">
+            <mat-card-header>
+                <mat-card-title class="food-name">Beef Shin</mat-card-title>
+                <p class="price">450</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="Chicken breast, red peppers, onions">
+            <mat-card-header>
+                <mat-card-title class="food-name">Chicken Skewer</mat-card-title>
+                <p class="price">700</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="Pork neck meat on a skewer">
+            <mat-card-header>
+                <mat-card-title class="food-name">Pork Skewer</mat-card-title>
+                <p class="price">700</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="Grilled chicken breasts">
+            <mat-card-header>
+                <mat-card-title class="food-name">Chicken Breast</mat-card-title>
+                <p class="price">700</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="Deep fried chicken drumsticks">
+            <mat-card-header>
+                <mat-card-title class="food-name">Chicken Drumstick</mat-card-title>
+                <p class="price">600</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip=" Beef steak">
+            <mat-card-header>
+                <mat-card-title class="food-name">Steak</mat-card-title>
+                <p class="price">900</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="Chicken breast stuffed with cheese on a grill">
+            <mat-card-header>
+                <mat-card-title class="food-name">Chicken Breast W/ cheese</mat-card-title>
+                <p class="price">700</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip=" Minced veal with bacon">
+            <mat-card-header>
+                <mat-card-title class="food-name">Uštipci</mat-card-title>
+                <p class="price">700</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="Grilled hangar steak on a barbeque">
+            <mat-card-header>
+                <mat-card-title class="food-name">Hanger Steak</mat-card-title>
+                <p class="price">800</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="Bacon cooked on charcoal barbeque">
+            <mat-card-header>
+                <mat-card-title class="food-name">Bacon</mat-card-title>
+                <p class="price">900</p>
+            </mat-card-header>
+            
+        </mat-card>
+    </div>
+    <div class="line-1"> <span>Alc. Drinks</span> </div>
+    <div class="alcoholic-drinks" id="alc-id">
+        <mat-card class="food-card" data-tooltip="50ml of Cognac">
+            <mat-card-header>
+                <mat-card-title class="food-name">Cognac</mat-card-title>
+                <p class="price">80</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="50ml of Stock">
+            <mat-card-header>
+                <mat-card-title class="food-name">Stock</mat-card-title>
+                <p class="price">90</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="50ml of Whiskey">
+            <mat-card-header>
+                <mat-card-title class="food-name">Whiskey</mat-card-title>
+                <p class="price">150</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="50ml of Jack Daniels">
+            <mat-card-header>
+                <mat-card-title class="food-name">Jack Daniels</mat-card-title>
+                <p class="price">200</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="50ml of Gin">
+            <mat-card-header>
+                <mat-card-title class="food-name">Gin</mat-card-title>
+                <p class="price">70</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="50ml of Pelinkovac with orange peel">
+            <mat-card-header>
+                <mat-card-title class="food-name">Pelinkovac</mat-card-title>
+                <p class="price">70</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="50ml of Jägermeister with orange peel">
+            <mat-card-header>
+                <mat-card-title class="food-name">Jägermeister</mat-card-title>
+                <p class="price">120</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="50ml of Vodka">
+            <mat-card-header>
+                <mat-card-title class="food-name">Vodka</mat-card-title>
+                <p class="price">90</p>
+            </mat-card-header>
+            
+        </mat-card>
+    </div>
+    <div class="line-1"> <span>Beer</span> </div>
+    <div class="beer" id="beer-id">
+        <mat-card class="food-card" data-tooltip="Draft Beer 0.33l/0.5l">
+            <mat-card-header>
+                <mat-card-title class="food-name">Skopsko Draft</mat-card-title>
+                <p class="price">100/120</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="Dark draft Beer 0.33l">
+            <mat-card-header>
+                <mat-card-title class="food-name">Skopsko Dark Beer</mat-card-title>
+                <p class="price">80</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="0.5l Beer">
+            <mat-card-header>
+                <mat-card-title class="food-name">Zlaten Dab</mat-card-title>
+                <p class="price">120</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="0.3l Beer">
+            <mat-card-header>
+                <mat-card-title class="food-name">Zlaten Dab Dark</mat-card-title>
+                <p class="price">100</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="0.3l Beer">
+            <mat-card-header>
+                <mat-card-title class="food-name">heineken</mat-card-title>
+                <p class="price">140</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="0.5l Beer">
+            <mat-card-header>
+                <mat-card-title class="food-name">Lashko</mat-card-title>
+                <p class="price">120</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip=" 0.5l Beer">
+            <mat-card-header>
+                <mat-card-title class="food-name">Tuborg</mat-card-title>
+                <p class="price">120</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="0.5l Beer">
+            <mat-card-header>
+                <mat-card-title class="food-name">Amstel</mat-card-title>
+                <p class="price">130</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="0.3l Beer">
+            <mat-card-header>
+                <mat-card-title class="food-name">Corona Beer</mat-card-title>
+                <p class="price">200</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="0.5l Beer">
+            <mat-card-header>
+                <mat-card-title class="food-name">krombacher</mat-card-title>
+                <p class="price">120</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="0.3l Beer">
+            <mat-card-header>
+                <mat-card-title class="food-name">BIP</mat-card-title>
+                <p class="price">80</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="0.5l Beer">
+            <mat-card-header>
+                <mat-card-title class="food-name">Staropramen</mat-card-title>
+                <p class="price">100</p>
+            </mat-card-header>
+            
+        </mat-card>
+    </div>
+    <div class="line-1"> <span>Warm Drinks</span> </div>
+    <div class="warm-drinks" id="warm-id">
+        <mat-card class="food-card" data-tooltip="Traditional Macedonian coffee">
+            <mat-card-header>
+                <mat-card-title class="food-name">Macedonian coffee</mat-card-title>
+                <p class="price">20</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="Lavazza espresso coffee">
+            <mat-card-header>
+                <mat-card-title class="food-name">Espresso</mat-card-title>
+                <p class="price">50</p>
+            </mat-card-header>
+
+        </mat-card><mat-card class="food-card" data-tooltip="Espresso with milk">
+            <mat-card-header>
+                <mat-card-title class="food-name">Macchiato</mat-card-title>
+                <p class="price">60</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="Instant Nescafe with milk">
+            <mat-card-header>
+                <mat-card-title class="food-name">Nescafe</mat-card-title>
+                <p class="price">60</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="Warm drink with tea leaf subsidiary with honey">
+            <mat-card-header>
+                <mat-card-title class="food-name">Tea</mat-card-title>
+                <p class="price">50</p>
+            </mat-card-header>
+            
+        </mat-card>
+    </div>
+    <div class="line-1"> <span>Wine</span> </div>
+    <div class="wine" style="margin-bottom: 60px;" id="wine-id">
+        <mat-card class="food-card" data-tooltip="White/Red Wine option">
+            <mat-card-header>
+                <mat-card-title class="food-name">Special Selection Blend 170ml</mat-card-title>
+                <p class="price">120</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="White/Red Wine option">
+            <mat-card-header>
+                <mat-card-title class="food-name">Special Selection Blend 1l</mat-card-title>
+                <p class="price">900</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="White/Red Wine option">
+            <mat-card-header>
+                <mat-card-title class="food-name">Smederevka 1l<br> Kavadarka 1l <br> Roze 1l <br></mat-card-title>
+                <p class="price">350</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="White/Red/Rose Wine option">
+            <mat-card-header>
+                <mat-card-title class="food-name">Alexandria 0.75l.0.187</mat-card-title>
+                <p class="price">700/150</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="Red Wine option">
+            <mat-card-header>
+                <mat-card-title class="food-name">Vranec S Selection 0.75l</mat-card-title>
+                <p class="price">900</p>
+            </mat-card-header>
+    
+        </mat-card><mat-card class="food-card" data-tooltip="White Wine option">
+            <mat-card-header>
+                <mat-card-title class="food-name">Traminec Classic 0.75l <br>Temjanka Classic 0.75l</mat-card-title>
+                <p class="price">700</p>
+            </mat-card-header>
+        </mat-card><mat-card class="food-card" data-tooltip="White Wine option">
+            <mat-card-header>
+                <mat-card-title class="food-name">Traminec Classic 0.187l <br>Temjanka Classic 0.187l</mat-card-title>
+                <p class="price">150</p>
+            </mat-card-header>
+        </mat-card><mat-card class="food-card" data-tooltip="Red Wine option">
+            <mat-card-header>
+                <mat-card-title class="food-name">T'ga za jug 0.75l/0.187l</mat-card-title>
+                <p class="price">700/150</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="White/Red Wine option">
+            <mat-card-header>
+                <mat-card-title class="food-name">Temjanka S Selection 0.75l <br>  Merlot S Selection 0.75l</mat-card-title>
+                <p class="price">900</p>
+            </mat-card-header>
+            
+        </mat-card><mat-card class="food-card" data-tooltip="White/Red Wine option">
+            <mat-card-header>
+                <mat-card-title class="food-name">Alexandria Cuvée 0.75l</mat-card-title>
+                <p class="price">900</p>
+            </mat-card-header>
+        
+        </mat-card>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Amatic+SC&family=Bebas+Neue&family=Bree+Serif&family=Cagliostro&family=Coiny&family=Finger+Paint&family=Fredoka&family=Indie+Flower&family=Josefin+Sans:wght@500&family=Permanent+Marker&family=Rancho&family=Satisfy&family=Teko&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+.container-main{
+  background-color: #323235;
+  display: flex;
+
+}
+#progress{
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  height: 60px;
+  width: 60px;
+  display: grid;
+  place-items: center;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 10;
+}
+#progress-value{
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color: #f59c92;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  color: #001a2e;
+}
+.cards-box{
+  display: flex;
+  flex-flow: column;
+  justify-items: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 0 8vw;
+}
+
+.line-1{
+  display: flex;
+  max-width: 100%;
+  font-size: 2rem;
+  margin: 6% 0 1% 0;
+  font-family: 'ABeeZee', sans-serif;
+  color: #fae9e1;
+  text-align: center;
+  text-decoration: underline;
+  
+}
+.price{
+    font-family: 'ABeeZee', sans-serif;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+.food-name{
+    font-family: 'Fredoka', sans-serif;
+    line-height: 1rem;
+    display: flex;
+    text-align: center;
+    line-height: 1.1rem;
+}
+#card-option-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+}
+.card-option {
+  width: 55vw;
+  display: flex;
+  align-items: center;
+  height: 8vh;
+  background-color: #b86258;
+  border-radius: 12px;
+  justify-items: flex-start;
+  min-height: 80px;
+
+}
+.mobile-buttons{
+  display: none;
+}
+.card-buttons {
+  display: flex;
+  width: 53vw;
+  overflow: hidden;
+  
+}
+.card-buttons > * {
+  flex-basis: 100%;
+  height: 6vh;
+  margin-right: 10px;
+  font-size: min(1.3rem,1.7vw);
+  border-radius: 6px;
+  background-color: #b86258;
+  border: none;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  transition: background-color 0.25s, color 0.25s;
+  &:hover {
+    cursor: pointer;
+    background-color: #fd8173;
+    opacity: 70%;
+  }
+}
+
+.salads{
+    display: flex;
+    flex-flow: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 200;
+    justify-content: space-evenly;
+}
+.Season-salad,.stews,.appetizers,.bbq,.beer,.warm-drinks,.wine,.alcoholic-drinks{
+    display: flex;
+    flex-flow: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 200;
+    justify-content: space-evenly;
+}
+.wine > * {
+    background-color: rgb(188, 95, 224);
+    font-size: 1rem;
+}
+.wine .food-name{
+  font-size: 1.2rem;
+  line-height: 1.1rem;
+}
+.food-card{
+    width: 210px;
+    height: 100px;
+    background-color: #c0b9b5;
+    border-radius: 12px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    &:hover::before{
+      content: attr(data-tooltip);
+      padding: 0.5rem;
+      position: absolute;
+      color: #d4cbc6;
+      background-color: #677576;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 600;
+      text-align: center;
+    }
+}
+
+@media screen and (max-width: 620px){
+  
+    .card-option{
+        display: none;
+    }
+
+    .food-card > * {
+      display: flex;
+      width: 180px ;
+      height: 80px;
+      align-items: center;
+      justify-content: center;
+    }
+    .cards-box{
+      margin: 0 2vw;
+    }
+  .mobile-buttons{
+    display: contents;
+    display: grid;
+    grid-template-columns: repeat(4, 20vw);
+    grid-template-rows: repeat(2, 5vh);
+    gap: 2vh 2vw;
+  }
+  .mobile-buttons > * {
+    border-radius: 12px;
+    border: none;
+    background-color: #677576;
+    font-family: 'Fredoka', sans-serif;
+    font-size: min(1.2rem,4vw);
+    overflow: hidden;
+  }
+  .line-1{
+    text-align: center;
+    position: relative;
+    font-size: 22px;
+    align-content: center;
+    text-align: center;
+    font-family: 'ABeeZee', sans-serif;
+    color: #fae9e1;
+  }
+}
+@media screen and (max-width: 430px) {
+  
+  .cards-box{
+    width: 100vw;
+  }
+  .food-card {
+    width: 150px;
+    height: 80px;
+    text-align: center;
+  }
+  
+  .wine .food-name{
+    font-size: 0.9rem;
+    line-height: 0.8rem;
+    margin: 0 0 20px 5px;
+  }
+  .food-name{
+    font-size: 0.9rem;
+  }
+  .price{
+    font-size: 0.8rem;
+    margin: 0 0.5rem;
+  }
+}
